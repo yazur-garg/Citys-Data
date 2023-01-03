@@ -26,7 +26,7 @@ $(document).ready(function() {
     error: function(){ console.log('Country data Error!')}
     });
     $.ajax({                
-    url:"city_list.json",
+    url:"./city_list.json",
     success: function(data){    
         cities = data;              
         console.log(cities);
