@@ -73,7 +73,7 @@ function loadWeatherData(arr)
         temp += arr[arr.length-1].toString();
     }
     $.ajax({                
-        url:"http://api.openweathermap.org/data/2.5/group?id=" + temp + "&units=metric&appid=c528f5397888b4f37fef45098aebf883",
+        url:"https://api.openweathermap.org/data/2.5/group?id=" + temp + "&units=metric&appid=c528f5397888b4f37fef45098aebf883",
         success: function(data){    
             weatherdata = data.list;  
             console.log("watherdata")            
